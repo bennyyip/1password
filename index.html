@@ -119,6 +119,24 @@ button {
     max-width: 402px;
     border: none;
 }
+input[type="password"], select {
+    vertical-align: baseline;
+    text-transform: none;
+    letter-spacing: 0.01em;
+    padding: .5em .6em;
+    display: inline-block;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: block;
+    font-size: 1.4rem;
+    width: 200px;
+    height: 30px;
+}
 input[type="text"], select {
     vertical-align: baseline;
     text-transform: none;
@@ -200,7 +218,7 @@ code {
     </tr>
     <tr>
         <td><span>HMAC</span></td>
-        <td><input id="hmac" type="text" placeholder="1password"></td>
+        <td><input id="hmac" type="password" placeholder="1password"></td>
     </tr>
     <tr>
         <td><span>Length<br/><code id="length-show">14</code></span></td>
@@ -210,7 +228,7 @@ code {
     </tr>
     <tr>
         <td colspan="2">
-        <span id="result"></span> 
+        <span id="result"></span>
         </td>
     </tr>
     <tr>
